@@ -220,7 +220,7 @@ Display the contact email address set in the configuration file by looping throu
     <li> Installed the python enviornment </li>
     <li> Can run the confirmation script and get the required output </li>
   </ol>
-  You can email <a href="mailto:curtinids@curtin.edu.au">curtinids@curtin.edu.au</a> if you need help. There will also be a short half-hour before the workshop for any serious issues.
+  You can email <a href="mailto:curtinids@curtin.edu.au">curtinids@curtin.edu.au</a> if you need help. There will also be a short 15-mins before the workshop if you require assistance.
 </p>
 {% comment%}
 CODE OF CONDUCT
