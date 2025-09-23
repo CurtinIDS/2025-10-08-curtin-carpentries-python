@@ -37,13 +37,13 @@ VSCode
     ![Installing Extensions](../assets/vs_code_extensions.jpg)
 12. Enter the Visual Studio Code Command Pallette using `Ctrl + Shift + P` (Windows) or `Command + Shift + P` (MacOS) and locate `Python: Create Environment`.
 
-    ![Creating a Virtual Environment](../assets/vs_code_create_environment.png)
+    ![Creating a Virtual Environment](../assets/vs_code_create_environment.jpg)
 13. Select `venv`.
 
-    ![Creating a Conda Environment](../assets/conda_env.png)
+    ![Creating a Conda Environment](../assets/conda_env.jpg)
 14. Select `Python 3.13`. (the version you just installed)
 
-    ![Selecting Python Version](../assets/python_version.png)
+    ![Selecting Python Version](../assets/python_version.jpg)
 15. When asked to "Select dependencies to install", click the box next to requirements.txt and click "ok"
     
     ![Selecting Dependencies](../assets/vs_code_dependencies.png)
