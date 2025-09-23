@@ -5,38 +5,58 @@ root: ..
 ---
 
 ## Local Setup
-1. Navigate to the [https://code.visualstudio.com/](https://code.visualstudio.com/) with your web browser.  
+The local setup involves installing several things:
+1. Python
+2. Git
+3. VSCode
+4. VSCode Python & Jupyter extensions
+5. Python Packages
 
-2. Download Visual Studio Code for your specific platform/Operating System.  
+You may be able to skip installing git if you already have it installed from the git workshop
 
+The full setup instructions are:
+Python
+1. Navigate to  the website https://www.python.org/downloads/ with your web browser.
+2. Download Python 3.13 (3.13.7 is fine) for your operating system
+3. Run the installer, following all prompts using the default settings
+Git
+4. Navigate to the website https://git-scm.com/downloads with your web browser
+5. Download git for your operating system
+6. Run the installer, following all prompts using the default settings  
+VSCode
+7. Navigate to the website https://code.visualstudio.com/ with your web browser.
+8. Download Visual Studio Code for your specific platform/Operating System.
 
-    ![Download Visual Studio Code](../assets/vs_code_download.jpg)
+    ![Download Visual Studio Code](assets/vs_code_download.jpg)
+9. Run the Visual Studio Code Installer and follow all prompts.
+10. Open Visual Studio Code, navigate to the File Explorer and clone this repository with the following repository name `https://github.com/CurtinIDS/CIDS_Carpentries_Python` into your preferred folder destination.
 
+    ![Clone Repository with Visual Studio Code](assets/vs_code_clone_repo.jpg)
+11. Navigate to the Extension sidebar then search for and install the Python and Jupyter extensions.
 
-3. Run the Visual Studio Code Installer and follow all prompts.  
+    ![Installing Extensions](assets/vs_code_extensions.jpg)
+12. Enter the Visual Studio Code Command Pallette using `Ctrl + Shift + P` (Windows) or `Command + Shift + P` (MacOS) and locate `Python: Create Environment`.
 
+    ![Creating a Virtual Environment](assets/vs_code_create_environment.png)
+13. Select `venv`.
 
-4. Open Visual Studio Code, navigate to the File Explorer (1.) and clone this repository (2.), entering the following repository name `https://github.com/CurtinIDS/CIDS_Carpentries_Python`, then selecting your preferred folder destination. 
-    - If asked "`Would you like to open this repository?`", click "`Open`". 
-    - If asked: "`Do you trust the authors of the files in this folder?`" click "`Trust Folder & Continue`", read the dialogue and then click "`Yes, I trust the authors`"
+    ![Creating a Conda Environment](assets/conda_env.png)
+14. Select `Python 3.13`. (the version you just installed)
 
-    ![Clone Repository with Visual Studio Code](../assets/vs_code_clone_repo.jpg)
-5. Navigate to the Extension sidebar (1.) then search (2.) for and install both the Python and Jupyter extensions.  
+    ![Selecting Python Version](assets/python_version.png)
+15. When asked to "Select dependencies to install", click the box next to requirements.txt and click "ok"
+    
+    ![Selecting Dependencies](assets/vs_code_dependencies.png)
+You should now be done!
 
-    ![Installing Extensions](../assets/vs_code_extensions.jpg)
-6. With the repository folder you downloaded earlier still open, enter the Visual Studio Code Command Pallette using `Ctrl + Shift + P` (Windows) or `Command + Shift + P` (MacOS) and locate `Python: Create Environment`.  If you cannot find it, you can partially type `Python` and the list should be filtered more
-
-    ![Creating a Virtual Environment](../assets/vs_code_create_environment.jpg)  
-7. Select `Conda`.
-
-    ![Creating a Conda Environment](../assets/conda_env.jpg)
-8. Select `Python 3.11`.  
-
-    ![Selecting Python Version](../assets/python_version.jpg)
-9. Open Command Prompt or Terminal within Visual Studio Code using `Ctrl + J` (Windows) or `Command + J` (MacOS).  
-
-10. Run the following command to install dependencies.  
-
+ONLY if you didn't do the step above when creating the virtual environment (venv):
+1. Open Command Prompt or Terminal within Visual Studio Code using `Ctrl + J` (Windows) or `Command + J` (MacOS). Make sure the "Terminal" tab is selected, and you're in the previously cloned directory
+2. Activate the created environment using the following command.
+    Windows 11 (powershell):
+    `.\.venv\Scripts\Activate.ps1`  
+    Mac/Linux:
+    `source ./venv/bin/activate`  
+4. Run the following command to install dependencies while in the activated environment.
     `pip install -r requirements.txt`
 
 ### Google Colab
